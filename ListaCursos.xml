@@ -2,3 +2,16 @@
 
 <!DOCTYPE listacursos SYSTEM "ListaCursos.dtd">
 
+<listacursos>
+    <curso>
+        <alumno DNI="CC123" nombre="Andres" apellido="Rojas" segundoapellido="Flores">
+            <listaasignaturas>
+                <asignatura nombre="Programación" codigo="ASI1">
+                    <profesor NRP="CC12345" nombre="Mario" apellido="Serna">
+
+                    </profesor>
+                </asignatura>
+            </listaasignaturas>
+        </alumno>
+    </curso>
+</listacursos>
