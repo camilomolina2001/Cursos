@@ -1,3 +1,20 @@
 <!ELEMENT listacursos (curso+)>
-    <!ELEMENT curso ()>
+    <!ELEMENT curso (alumno+)>
+        <!ELEMENT alumno (#PCDATA)>
+            <!ATTLIST alumno DNI ID #REQUIRED>
+            <!ATTLIST alumno nombre CDATA #REQUIRED>
+            <!ATTLIST alumno apellido CDATA #REQUIRED>
+            <!ATTLIST alumno segundoapellido CDATA #IMPLIED>
+    <!ELEMENT listaasignaturas (asignatura+)>
+        <!ELEMENT asignatura (#PCDATA)>
+            <!ATTLIST asignatura nombre CDATA #REQUIRED>
+            <!ATTLIST asignatura codigo ID #REQUIRED>
+            <!ATTLIST asignatura profesor CDATA #REQUIRED>
+            <!ELEMENT profesor (#PCDATA)>
+                <!ATTLIST profesor NRP ID #REQUIRED>
+                <!ATTLIST profesor nombre CDATA #REQUIRED>
+                <!ATTLIST profesor apellido CDATA #REQUIRED>
+                <!ATTLIST profesor segundoapellido CDATA #IMPLIED>
+
+
 
